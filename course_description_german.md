@@ -16,13 +16,9 @@ Die Teilnehmenden entwickeln interaktive mit der lehrenden Person in Teilaufgabe
 
 ## Prüfungsmodalitäten
 
-### Prüfungsablauf
-
-Mündliche bzw. praktische Prüfung 30 bis 60 Minuten. Die geprüfte Person erhält eine Aufgabe, welche der im Kurs gestellten Aufgaben ähnelt und bearbeitet diese mit Unterstützung der Prüfer. Die geprüfte Person erläutert dabei ihr vorgehen und demonstriert so das Erlangen des in der Veranstaltung vermittelte Wissens.
-
-### Prüfungsergebnis
-
-Bestanden oder nicht bestanden
+Der Lernerfolg soll primär über einen Einfachauswahltest überprüft werden.
+Um Schwächen dieses Verfahrens auszugleichen wird in allen Fällen, in denen der Lernerfolg nicht hinreichend nachgewisen werden konnte, eine praktische und mündliche Prüfung von bis zu 30 Minuten Dauer erfolgen.
+In begründeten Fällen (z.B. Prüfungsangst) kann von diesem Verfahren abgewichen werden.
 
 ## Weitere Modalitäten
 
