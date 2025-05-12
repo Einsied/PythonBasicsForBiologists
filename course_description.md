@@ -32,7 +32,7 @@ Deviations are possible in warranted cases (e.g. examination phobia).
 | Number of participants               | 10-20                                                | 
 | Course-materials                     | https://github.com/Einsied/PythonBasicsForBiologists |
 | Date                                 | To be announced, Monday-Friday                       |
-| Place                                | Wird noch bekannt gegeben                            |
+| Place                                | To be announced                                      |
 | Time-slot                            | 10:00 c.t. -17:00 c.t. Uhr including 30 minute break |
 | Prerequisite                         | None extraordinary                                   |
 | Necessary materials for participants | A device capable to connection to the internat from the course-location and able to run a java-script-capable browser (like firefox, Chrome or Edge) with an character input method. The usage of a laptop and pen and paper are advised. |
