@@ -10,4 +10,4 @@ While the materials can be cloned onto a local machine and jupyter can be instal
 this process is suprisingly cumbersome and frustrating for beginners,
 therefore the materials aer hosted on [mybinder](https://mybinder.org/v2/gh/Einsied/PythonBasicsForBiologists/main).
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Einsied/PythonBasicsForBiologists/main).
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Einsied/PythonBasicsForBiologists/main)
