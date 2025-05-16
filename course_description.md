@@ -20,9 +20,7 @@ The example problem is the visualization and limited statistical analysis of a m
 
 ## Examination
 
-Success is primarily measured with a multiple-choice-test.
-To correct for the flaws of this examination-methods all cases, in which success could not be proven sufficiently, will be examined further in a practical and oral exam up to 30 minutes.
-Deviations are possible in warranted cases (e.g. examination phobia).
+The participation in the course and the final result will be used to grade the participants.
 
 ## Further information
 
@@ -31,7 +29,7 @@ Deviations are possible in warranted cases (e.g. examination phobia).
 | Language                             | English                                              |
 | Number of participants               | 10-20                                                | 
 | Course-materials                     | https://github.com/Einsied/PythonBasicsForBiologists |
-| Date                                 | To be announced, Monday-Friday                       |
+| Date                                 | 8th September until 12th of September                |
 | Place                                | To be announced                                      |
 | Time-slot                            | 10:00 c.t. -17:00 c.t. Uhr including 30 minute break |
 | Prerequisite                         | None extraordinary                                   |

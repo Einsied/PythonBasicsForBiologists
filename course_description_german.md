@@ -16,9 +16,8 @@ Die Teilnehmenden entwickeln interaktive mit der lehrenden Person in Teilaufgabe
 
 ## Prüfungsmodalitäten
 
-Der Lernerfolg soll primär über einen Einfachauswahltest überprüft werden.
-Um Schwächen dieses Verfahrens auszugleichen wird in allen Fällen, in denen der Lernerfolg nicht hinreichend nachgewisen werden konnte, eine praktische und mündliche Prüfung von bis zu 30 Minuten Dauer erfolgen.
-In begründeten Fällen (z.B. Prüfungsangst) kann von diesem Verfahren abgewichen werden.
+Die Beteiligung am Kurs und Lösung der praktischen Aufgaben während der Veranstaltung
+bilden das benotete Prüfungsergebnis.
 
 ## Weitere Modalitäten
 
@@ -27,7 +26,7 @@ In begründeten Fällen (z.B. Prüfungsangst) kann von diesem Verfahren abgewich
 | Sprache                  | Der Kurs wird vorerst in englischer Sprache angeboten |
 | Teilnehmenden Anzahl     | 10-20 Personen                                        |
 | Kurs unterlagen          | https://github.com/Einsied/PythonBasicsForBiologists  |
-| Termin                   | Wird noch bekannt gegeben, Montag bis Freitag         |
+| Termin                   | 8ter - 12ter September                                |
 | Ort                      | Wird noch bekannt gegeben                             |
 | Veranstaltungsdauer      | 10:00 c.t. -17:00 c.t. Uhr inklusive 30 Minuten Pause |
 | Benötigte Vorkentnisse   | Keine besonderen                                      |
