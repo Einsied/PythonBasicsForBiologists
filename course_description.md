@@ -30,7 +30,7 @@ The participation in the course and the final result will be used to grade the p
 | Number of participants               | 10-20                                                | 
 | Course-materials                     | https://github.com/Einsied/PythonBasicsForBiologists |
 | Date                                 | 8th September until 12th of September                |
-| Place                                | To be announced                                      |
+| Place                                | INF 230 Room 004                                     |
 | Time-slot                            | 10:00 c.t. -17:00 c.t. Uhr including 30 minute break |
 | Prerequisite                         | None extraordinary                                   |
 | Necessary materials for participants | A device capable to connection to the internat from the course-location and able to run a java-script-capable browser (like firefox, Chrome or Edge) with an character input method. The usage of a laptop and pen and paper are advised. |
