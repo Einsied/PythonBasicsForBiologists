@@ -200,19 +200,19 @@ def kill_cell_if_small(cell_index, dish):
     cell_body_pixels = dish == cell_body_number
     nucleus_size = numpy.sum(nucleus_pixels)
     cell_body_size = numpy.sum(cell_body_pixels)
-    cell_is_young = nucleus_size < 2 * cell_body_size
+    cell_is_young = nucleus_size < 4
     if cell_is_young:
         return
-    if nucleus_size < nucleus_area and cell_body_size < cell_area:
+    cell_has_no_body = cell_area < 2
+    kill_cell = cell_has_no_body
+    if not kill_cell and nucleus_size < nucleus_area and cell_body_size < cell_area:
         chance_to_kill = random.uniform(0, 1.0)
         accept_kill = (nucleus_size + cell_body_size) / (nucleus_area + cell_area)
         if chance_to_kill > accept_kill:
-            dish[numpy.logical_or(nucleus_pixels, cell_body_pixels)] = 1
+            kill_cell = True
+    if kill_cell:
+        dish[numpy.logical_or(nucleus_pixels, cell_body_pixels)] = 1
 
-    cell_nucleus_number = (cell_index + 1) * 2
-    cell_body_number = cell_nucleus_number + 1
-    to_clear = numpy.logical_or(dish == cell_nucleus_number, dish == cell_body_number)
-    dish[to_clear] = 1
 
 def extract_cell_data(dish):
     indices = numpy.unique(dish)
