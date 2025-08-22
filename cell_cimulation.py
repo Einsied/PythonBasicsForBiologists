@@ -311,10 +311,12 @@ for dish_index in range(1, 6):
                     cell_id, nucleus_x, nucleus_y, nucleus_area, body_area, body_x, body_y = line.split(",")
                     nucleus_x = int(nucleus_x) * zoom + random.randint(-zoom, zoom + 1)
                     nucleus_y = int(nucleus_y) * zoom + random.randint(-zoom, zoom + 1)
-                    nucleus_area = int(nucleus_area) * zoom + random.randint(-zoom, zoom + 1)
+                    original_nucleus_area = int(nucleus_area)
+                    nucleus_area = int(original_nucleus_area) * zoom + random.randint(-zoom, zoom + 1)
                     body_x = int(body_x) * zoom + random.randint(-zoom, zoom + 1)
                     body_y = int(body_y) * zoom + random.randint(-zoom, zoom + 1)
-                    body_area = int(body_area) * zoom + random.randint(-zoom, zoom + 1)
+                    original_body_area = int(body_area) - original_nucleus_area
+                    body_area = max(original_body_area * zoom + random.randint(-zoom, zoom + 1), 0) + nucleus_area
                     csv_file.write(f"{cell_id}, {nucleus_x}, {nucleus_y}, {nucleus_area}, {body_area}, {body_x}, {body_y}\n")
                 else:
                     csv_file.write(line + "\n")
