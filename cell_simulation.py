@@ -284,8 +284,6 @@ random.seed(seed, 2)
 
 data_folder = pathlib.Path("./data")
 
-zoom_factors = [1, 2, 2, 3, 3, 3, 3, 3, 4, 4, 5]
-
 nucleus_area = 3
 cell_area = int(nucleus_area * 10)
 cell_max_radius = int(numpy.sqrt(cell_area) / numpy.pi * 1.2)
@@ -297,8 +295,7 @@ for dish_index in range(1, 6):
     seed_dish(dish)
     # Run the other 12 days
     for day in range(1, 13):
-        zoom = random.choice(zoom_factors)
-        file_name = f"Day_{day}_dish_{dish_index}_zoom_{zoom}.csv"
+        file_name = f"Day_{day}_dish_{dish_index}.csv"
         run_day(dish, nucleus_area, cell_area, cell_max_radius)
         file_str = extract_cell_data(dish)
         csv_file_path = data_folder / file_name
@@ -306,22 +303,7 @@ for dish_index in range(1, 6):
             first_line = True
             for line in file_str:
                 if not first_line:
-                    cell_id, nucleus_x, nucleus_y, nucleus_area, body_area, body_x, body_y = line.split(",")
-                    nucleus_x = int(nucleus_x) 
-                    nucleus_x_zoomed = random.randint(nucleus_x*zoom - zoom + 1, nucleus_x*zoom + zoom)
-                    nucleus_y = int(nucleus_y)
-                    nucleus_y_zoomed = random.randint(nucleus_y*zoom - zoom + 1, nucleus_y*zoom + zoom)
-                    # The area increases with the square of the distance
-                    area_zoom = zoom**2
-                    nucleus_area = int(nucleus_area)
-                    nucleus_area_zoomed = random.randint(nucleus_area*area_zoom - area_zoom + 1, nucleus_area*area_zoom + area_zoom)
-                    body_x = int(body_x)
-                    body_x_zoomed = random.randint(body_x*zoom - zoom + 1, body_x*zoom + zoom)
-                    body_y = int(body_y)
-                    body_y_zoomed = random.randint(body_y*zoom - zoom + 1, body_y*zoom + zoom)
-                    body_area = int(body_area)
-                    body_area_zoomed = random.randint(nucleus_area_zoomed + body_area * area_zoom - area_zoom + 1, nucleus_area_zoomed + body_area * area_zoom + area_zoom)
-                    csv_file.write(f"{cell_id}, {nucleus_x}, {nucleus_y}, {nucleus_area}, {body_area}, {body_x}, {body_y}\n")
+                    csv_file.write(f"{line}\n")
                 else:
                     csv_file.write(line + "\n")
                     first_line = False
