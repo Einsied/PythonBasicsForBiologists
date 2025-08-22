@@ -298,7 +298,7 @@ for dish_index in range(1, 6):
     # Run the other 12 days
     for day in range(1, 13):
         zoom = random.choice(zoom_factors)
-        file_name = f"Day_{day}_dish_{dish_index}_zoom{zoom}.csv"
+        file_name = f"Day_{day}_dish_{dish_index}_zoom_{zoom}.csv"
         run_day(dish, nucleus_area, cell_area, cell_max_radius)
         file_str = extract_cell_data(dish)
         csv_file_path = data_folder / file_name
