@@ -326,4 +326,3 @@ for dish_index in range(1, 6):
                     csv_file.write(line + "\n")
                     first_line = False
         print(f"{csv_file_path} written")
-    break
