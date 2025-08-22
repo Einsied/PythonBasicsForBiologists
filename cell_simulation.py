@@ -203,12 +203,12 @@ def kill_cell_if_small(cell_index, dish):
     cell_is_young = nucleus_size < 4
     if cell_is_young:
         return
-    cell_has_no_body = cell_area < 2
+    cell_has_no_body = cell_body_size < 2
     kill_cell = cell_has_no_body
     if not kill_cell and nucleus_size < nucleus_area and cell_body_size < cell_area:
         chance_to_kill = random.uniform(0, 1.0)
         accept_kill = (nucleus_size + cell_body_size) / (nucleus_area + cell_area)
-        if chance_to_kill > accept_kill:
+        if chance_to_kill < accept_kill:
             kill_cell = True
     if kill_cell:
         dish[numpy.logical_or(nucleus_pixels, cell_body_pixels)] = 1
@@ -300,7 +300,8 @@ for dish_index in range(1, 6):
     # Run the other 12 days
     for day in range(1, 13):
         zoom = random.choice(zoom_factors)
-        file_name = f"Day_{day}_dish_{dish_index}_zoom_{zoom}.csv"
+        zoom = 1
+        file_name = f"Day_{day}_dish_{dish_index}_{zoom}.csv"
         run_day(dish, nucleus_area, cell_area, cell_max_radius)
         file_str = extract_cell_data(dish)
         csv_file_path = data_folder / file_name
