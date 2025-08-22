@@ -29,7 +29,7 @@ def grow_cell(cell_index, dish, nucleus_area, cell_area, cell_max_radius):
     cell_grow_window = numpy.zeros((window_right - window_left, window_top - window_bottom), numpy.uint16)
     cell_grow_window = dish[window_bottom:window_top, window_left:window_right]
     # Grow / move the nucleus
-    growth_cycles = 5
+    growth_cycles = 3
     for cycle in range(0, growth_cycles, 1):
         nucleus_neighbors = numpy.zeros(cell_grow_window.shape, bool)
         local_nucleus_inidices = numpy.where(cell_grow_window == cell_nucleus_number)
@@ -200,11 +200,9 @@ def kill_cell_if_small(cell_index, dish):
     cell_body_pixels = dish == cell_body_number
     nucleus_size = numpy.sum(nucleus_pixels)
     cell_body_size = numpy.sum(cell_body_pixels)
-    cell_is_young = nucleus_size < 4
-    if cell_is_young:
-        return
     cell_has_no_body = cell_body_size < 2
-    kill_cell = cell_has_no_body
+    cell_is_young = nucleus_size < 3
+    kill_cell = cell_has_no_body and not cell_is_young
     if not kill_cell and nucleus_size < nucleus_area and cell_body_size < cell_area:
         chance_to_kill = random.uniform(0, 1.0)
         accept_kill = (nucleus_size + cell_body_size) / (nucleus_area + cell_area)
@@ -301,7 +299,7 @@ for dish_index in range(1, 6):
     for day in range(1, 13):
         zoom = random.choice(zoom_factors)
         zoom = 1
-        file_name = f"Day_{day}_dish_{dish_index}_{zoom}.csv"
+        file_name = f"Day_{day}_dish_{dish_index}_zoom{zoom}.csv"
         run_day(dish, nucleus_area, cell_area, cell_max_radius)
         file_str = extract_cell_data(dish)
         csv_file_path = data_folder / file_name
@@ -310,14 +308,20 @@ for dish_index in range(1, 6):
             for line in file_str:
                 if not first_line:
                     cell_id, nucleus_x, nucleus_y, nucleus_area, body_area, body_x, body_y = line.split(",")
-                    nucleus_x = int(nucleus_x) * zoom + random.randint(-zoom, zoom + 1)
-                    nucleus_y = int(nucleus_y) * zoom + random.randint(-zoom, zoom + 1)
-                    original_nucleus_area = int(nucleus_area)
-                    nucleus_area = int(original_nucleus_area) * zoom + random.randint(-zoom, zoom + 1)
-                    body_x = int(body_x) * zoom + random.randint(-zoom, zoom + 1)
-                    body_y = int(body_y) * zoom + random.randint(-zoom, zoom + 1)
-                    original_body_area = int(body_area) - original_nucleus_area
-                    body_area = max(original_body_area * zoom + random.randint(-zoom, zoom + 1), 0) + nucleus_area
+                    nucleus_x = int(nucleus_x) 
+                    nucleus_x_zoomed = random.randint(nucleus_x*zoom - zoom + 1, nucleus_x*zoom + zoom)
+                    nucleus_y = int(nucleus_y)
+                    nucleus_y_zoomed = random.randint(nucleus_y*zoom - zoom + 1, nucleus_y*zoom + zoom)
+                    # The area increases with the square of the distance
+                    area_zoom = zoom**2
+                    nucleus_area = int(nucleus_area)
+                    nucleus_area_zoomed = random.randint(nucleus_area*area_zoom - area_zoom + 1, nucleus_area*area_zoom + area_zoom)
+                    body_x = int(body_x)
+                    body_x_zoomed = random.randint(body_x*zoom - zoom + 1, body_x*zoom + zoom)
+                    body_y = int(body_y)
+                    body_y_zoomed = random.randint(body_y*zoom - zoom + 1, body_y*zoom + zoom)
+                    body_area = int(body_area)
+                    body_area_zoomed = random.randint(nucleus_area_zoomed + body_area * area_zoom - area_zoom + 1, nucleus_area_zoomed + body_area * area_zoom + area_zoom)
                     csv_file.write(f"{cell_id}, {nucleus_x}, {nucleus_y}, {nucleus_area}, {body_area}, {body_x}, {body_y}\n")
                 else:
                     csv_file.write(line + "\n")
