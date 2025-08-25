@@ -1,4 +1,4 @@
-ratID, unitID, channel, spikeTimes
+ratID,unitID,channel,spikeTimes
 2023111501, 0, 2, 0.5725
 2023111501, 17, 90, 0.0038
 2023111501, 17, 90, 0.2308
