@@ -8,6 +8,6 @@ The focus of the course will be more on the abstract concepts than on the langua
 
 While the materials can be cloned onto a local machine and jupyter can be installed there,
 this process is suprisingly cumbersome and frustrating for beginners,
-therefore the materials aer hosted on [mybinder](https://mybinder.org/v2/gh/Einsied/PythonBasicsForBiologists/main).
+therefore the materials aer hosted on [mybinder](https://mybinder.org/v2/gh/Einsied/PythonBasicsForBiologists/content?urlpath=%2Fdoc%2Ftree%2F01_Theory_and_perspective.ipynb).
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Einsied/PythonBasicsForBiologists/main)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Einsied/PythonBasicsForBiologists/content?urlpath=%2Fdoc%2Ftree%2F01_Theory_and_perspective.ipynb)
