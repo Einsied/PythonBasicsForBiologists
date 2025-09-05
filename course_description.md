@@ -31,7 +31,7 @@ The participation in the course and the final result will be used to grade the p
 | Course-materials                     | https://github.com/Einsied/PythonBasicsForBiologists |
 | Date                                 | 8th September until 12th of September                |
 | Place                                | INF 230 Room 004                                     |
-| Time-slot                            | 10:00 c.t. -17:00 c.t. Uhr including 30 minute break |
+| Time-slot                            | 10:00 c.t. -17:00 c.t. Uhr                           |
 | Prerequisite                         | None extraordinary                                   |
 | Necessary materials for participants | A device capable to connection to the internat from the course-location and able to run a java-script-capable browser (like firefox, Chrome or Edge) with an character input method. The usage of a laptop and pen and paper are advised. |
 

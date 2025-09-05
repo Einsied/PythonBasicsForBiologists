@@ -28,7 +28,7 @@ bilden das benotete Prüfungsergebnis.
 | Kurs unterlagen          | https://github.com/Einsied/PythonBasicsForBiologists  |
 | Termin                   | 8ter - 12ter September                                |
 | Ort                      | INF 230 Raum 004                                      |
-| Veranstaltungsdauer      | 10:00 c.t. -17:00 c.t. Uhr inklusive 30 Minuten Pause |
+| Veranstaltungsdauer      | 10:00 c.t. -17:00 c.t. Uhr                            |
 | Benötigte Vorkentnisse   | Keine besonderen                                      |
 | Materialien Teilnehmende | Ein im Veranstaltungsraum internetfähiges Endgerät mit installiertem  java-scriptfähigen Browser (z.B. Firefox, Chrome oder Edge) und einer Möglichkeit zur Zeicheneingabe wird vorausgesetzt. Die Verwendung eines Laptops mit Tastatur, sowie Stift und Papier wird empfohlen. |
 
