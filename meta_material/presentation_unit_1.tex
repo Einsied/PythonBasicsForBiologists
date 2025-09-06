@@ -1,0 +1,95 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\newcommand{\Author}{Sebastian Einsiedler}
+\newcommand{\Title}{Programming for Biologist}
+\newcommand{\SubTitle}{Theory and perspective}
+
+\title{\Title}
+\subtitle{\SubTitle}
+\author{\Author}
+
+\usepackage{amsmath, amssymb}
+\usepackage{enumerate}
+\usepackage[table]{xcolor}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{hyperref}
+\hypersetup{
+	bookmarks=true,
+	unicode=true,
+	pdfauthor = {\Author},
+	pdftitle = {\Title},
+	pdfsubject = {\Title},
+	pdfsubject = {\Author, \Title, \SubTitle Python, Programming, Programming for biologists, presentation},
+	colorlinks = true,
+	linkcolor = {blue!50!black},
+	filecolor = {red!50!black},
+	urlcolor = {blue!75!black}
+}
+\usepackage{csquotes}
+
+\usepackage{footnotebackref}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{
+	\hspace{2ex}
+	\insertshorttitle
+	: \hspace{3em}
+	\insertsectionhead
+	\hfill
+	\insertframenumber /
+	\inserttotalframenumber
+	\hspace{2ex}
+	\vspace{2ex}
+}
+
+\begin{document}
+
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{img/Title.png}}
+\begingroup
+\setbeamertemplate{footline}{}
+\begin{frame}{Title}
+{
+	\vskip 6em
+	\color{white}
+	\LARGE \Title{}
+	\newline
+	\large
+	\SubTitle{}
+	
+	\vskip 5em
+	\small
+	\Author{}
+	and 
+	\color{white}{Eduard Maier} \\
+	RG Neurobiology of maternal care \\
+	Department Neuropeptide research in psychiatry
+}
+\end{frame}
+\endgroup
+
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{img/Body.png}}
+
+\section{Table of contents}
+\begin{frame}
+	\frametitle{Table of contents}
+	\tableofcontents
+\end{frame}
+
+\section{Introduction}
+\begin{frame}{Introduction}
+\end{frame}
+
+\section{Real data}
+\begin{frame}{Real data}
+\end{frame}
+
+\end{document}
