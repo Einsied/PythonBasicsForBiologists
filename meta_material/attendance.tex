@@ -1,0 +1,73 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\newcommand{\Author}{Sebastian Einsiedler}
+\newcommand{\Title}{Attendance list}
+
+\title{\Title}
+\author{\Author}
+
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\hypersetup{
+	bookmarks=true,
+	unicode=true,
+	pdfauthor = {\Author},
+	pdftitle = {\Title},
+	pdfsubject = {\Title},
+	pdfsubject = {\Author, \Title},
+	colorlinks = true,
+	linkcolor = {blue!50!black},
+	filecolor = {red!50!black},
+	urlcolor = {blue!75!black}
+}
+
+\usepackage{longtable}
+\usepackage[landscape=true]{geometry}
+
+\begin{document}
+
+\begin{center}
+	\large
+	\Title{}
+\end{center}
+
+\thispagestyle{empty}
+
+\begin{tabular}{
+	c|c|c 
+	|c|c|c|c|c
+	}
+	Given Name \phantom{buff} & Last Name \phantom{buffer} & Studen number 
+	& Module 1 \phantom{buf}
+	& Module 2 \phantom{buf}
+	& Module 3 \phantom{buf}
+	& Module 4 \phantom{buf}
+	& Module 5 \phantom{buf} \\
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+	\hline &&&&&&& \\[6pt]
+\end{tabular}
+
+\end{document}
