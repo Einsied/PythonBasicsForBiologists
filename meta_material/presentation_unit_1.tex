@@ -82,6 +82,7 @@
 \section{Table of contents}
 \begin{frame}
 	\frametitle{Table of contents}
+	\setcounter{tocdepth}{1}
 	\tableofcontents
 \end{frame}
 
@@ -227,6 +228,7 @@ what you need to know to begin your plan.
 Please remember “Say precisely enough”.
 \end{frame}
 
+\subsection{Develop a rough idea}
 \begin{frame}{Approaching a problem}{Develop rough idea}
 \begin{enumerate}
 	\item Tally marks for all the seconds
@@ -249,10 +251,11 @@ Second & Number of spikes & Immobility \\
 \end{table}
 \end{frame}
 
+\subsection{Survey data}
 \begin{frame}[fragile]{Approaching a problem}{Survey data}
 \textquote{immobility.csv}:
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=single]
 begin in seconds,end in seconds
 44, 1018
 2140, 2993
@@ -260,10 +263,12 @@ begin in seconds,end in seconds
 \pause
 \vspace{1em}
 \begin{tabular}{cc}
+	\toprule
 	begin in seconds & end in seconds \\
 	\midrule
 	44 & 1018 \\
 	2140 & 2993 \\
+	\bottomrule
 \end{tabular}
 
 \pause
@@ -276,37 +281,35 @@ Please, try to figure out what is saved in \textquote{session\_2023111501010\_un
 	Please team up and try yo create a set of instructions to create the table we defined earlier.
 \end{frame}
 
+\subsection{Create a detailed plan}
 \begin{frame}{Approaching a problem}{Create a detailed plan}
-\tiny
+\setbeamertemplate{itemize/enumerate body begin}{\tiny}
+\setbeamertemplate{itemize/enumerate subbody begin}{\tiny}
+\setbeamertemplate{itemize/enumerate subsubbody begin}{\tiny}
 \begin{enumerate}
-\item Open the units-file
-\item Figure out how many units there are
-\item Figure out when the last spike occurs in seconds
-\item Create a column with one entry for every second between 0 and the last spike occurance.
-\item Use this column to begin a table
-\item For every unit:
+\item {Open the units-file}
+\item {Figure out how many units there are}
+\item {Figure out when the last spike occurs in seconds}
+\item {Create a column with one entry for every second between 0 and the last spike occurance.}
+\item {Use this column to begin a table}
+\item {For every unit:}
 \begin{enumerate}
-\tiny
-	\item Create a column containing the same amount of entries as the second-column
-	\item Fill the list with 0s
-	\item For every row in the unit file:
+	\item {Create a column containing the same amount of entries as the second-column}
+	\item {Fill the list with 0s}
+	\item {For every row in the unit file:}
 	\begin{enumerate}
-\tiny
-		\item Find the second to which the spike belongs
-		\item Increase the entry in the column corresponding to this second
+		\item {Find the second to which the spike belongs}
+		\item {Increase the entry in the column corresponding to this second}
 	\end{enumerate}
-\tiny
-	\item Add the column to the table
+\item {Add the column to the table}
 \end{enumerate}
-\tiny
-\item Open the immobility file
-\item Create a column containing the same amount of entries as the second-column
-\item For every second in the immobility-list:
+\item {Open the immobility file}
+\item {Create a column containing the same amount of entries as the second-column}
+\item {For every second in the immobility-list:}
 \begin{enumerate}
-\tiny
-	\item Mark as "Yes" if it is within an immobility phase otherwise mark as "No"
+	\item {Mark as "Yes" if it is within an immobility phase otherwise mark as "No"}
 \end{enumerate}
-\item Add the column to the table
+\item {Add the column to the table}
 \end{enumerate}
 \end{frame}
 
@@ -326,6 +329,7 @@ Please, try to figure out what is saved in \textquote{session\_2023111501010\_un
 	You should understand it because it could save you a lot of time every few years of your career.
 \end{frame}
 
+\subsection{Data representation and memory}
 \begin{frame}{How computers work}{Data representation and memory}
 \begin{itemize}
 	\item Memory is organized in cells
@@ -363,14 +367,62 @@ Sum:
 \end{itemize}
 \end{frame}
 
+\begin{frame}{How computers work}{Addresses example}
+Multiple cells:
+\begin{tabular}{cccc}
+	\toprule
+	Number & Content  \\
+	\midrule
+	1562   & 00000000 \\
+	1563   & 00000100 \\
+	1564   & 00010011 \\
+	1565   & 01000001 \\
+	1566   & 00001010 \\
+	\bottomrule
+\end{tabular}
+
+\pause
+\vspace{2em}
+
+The contents at the moment have no meaning for this we need a type.
+
+\end{frame}
+
+\begin{frame}{How computers work}{Type}
+
+\begin{itemize}
+	\item Assume we have a variable \textquote{a}.
+	\item It is a \textquote{unsigned char} or 8-bit integer
+	\item it is saved in memory cell \textquote{1564}
+\end{itemize}
+
+\pause
+\vspace{2em}
+
+The variable:
+\begin{tabular}{ccccc}
+	\toprule
+	Name & Type          & Address  & Memory cell content & Value         \\
+	\midrule
+	a    & unsigned int  & 1564     &  00010011           & 19            \\
+	b    &          char & 1565     &  01000001           & \textquote{A} \\
+	c    & unsigned int  & 1565     &  01000001           & 65            \\
+	\bottomrule
+\end{tabular}
+\end{frame}
+
+\subsection{Computation}
 \begin{frame}[fragile]{How computers work}{Computation}
 Pointing an calling:
+\vspace{2em}
 
-\begin{lstlisting}[language=Python]
+\begin{lstlisting}[language=Python, frame=single]
 spike_counter = 0
 \end{lstlisting}
+
 \pause
-\textquote{Take the memory\_cell called spike\_counter and assign it the value 0.}
+\vspace{2em}
+\textquote{Take the \textquote{memory\_cell} called \textquote{spike\_counter} and assign it the value 0.}
 \pause
 
 \vspace{2em}
@@ -402,6 +454,7 @@ Please solve the provided exercises.
 
 \end{frame}
 
+\subsection{Instructions}
 \begin{frame}{How computers work}{Instructions}
 \begin{itemize}
 	\item Computer save single instructions in memory cells
@@ -409,9 +462,122 @@ Please solve the provided exercises.
 	\item The current instruction is referenced by the \textquote{instruction pointer}
 	\item There are smallest or \textquote{atomic} instructions
 \end{itemize}
+\end{frame}
+
+\begin{frame}{How computers work}{Instructions - Example}
+\begin{tabular}{rl}
+	Line & Instruction \\
+	0    & if\_less 10, spike\_counter \\
+	1    & \phantom{tab1} spike\_counter -= 1 \\
+	2    & if\_less 10, spike\_counter \\
+	3    & \phantom{tab1} goto 0 \\
+\end{tabular}
 
 \vspace{2em}
-% Todo introduce exercise
+
+Please use this knowledge to write your own \textquote{Pseudo-assembly-code} in the provided exercise.
 
 \end{frame}
+
+\begin{frame}{How computers work}{Instructions - When does this matter}
+\begin{itemize}
+	\item Function addresses to reuse code
+	\item Atomic instructions for multithreading
+	\item Instruction pipeline optimization
+	\item Functions can be variables
+\end{itemize}
+\end{frame}
+
+\subsection{Abstraction and interpreter}
+\begin{frame}[fragile]{How computers work}{Abstraction and interpreter}
+We use abstractions to simplify instructions into higher languages:
+
+\begin{lstlisting}[language=Python, frame=single]
+spike_counter = 0
+if_less spike_counter, 50
+	spike_counter += 1
+if_less spike_counter, 50
+	goto 1
+\end{lstlisting}
+\pause
+\begin{lstlisting}[language=Python, frame=single]
+spike_counter = 0
+while spike_counter < 50:
+	spike_counter += 1
+print(spike_counter)
+\end{lstlisting}
+\pause
+Please run this code in your jupyter notebook.
+\end{frame}
+
+\begin{frame}{How computers work}{Abstraction and interpreter}
+What just happened?:
+\begin{enumerate}
+	\item Jupyter send yout text to the interpreter
+	\item The Python-interpreter interpreted/translated your text into instructions
+	\item The instructions were sent to the central-processing-unit
+	\item The central-processing-unit returned the result of your algorithm
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{How computers work}{Abstraction and interpreter}
+Things to remember about the interpreter:
+\begin{itemize}
+	\item Spelling matters \textquote{SpikeCounter} is not \textquote{spikecounter} is not \textquote{spike\_counter}
+	\item It is a logic machine, it just applies predefined rules
+	\item It produces binary isntructions
+	\item Some languages like \textquote{C} or \textquote{C++} save the binary instructions as prgrams (e.g. \textquote{.exe}),
+		then the interpreter is known as a compiler
+	\item Interpreted languages are usually less optimized and slower than compiled lanugages
+	\item Interpreted languages are usually faster to write
+	\item Compiled languages usually need to bre recompiled for every chip
+	\item Use interpreted languages for higher-level tasks
+	\item Use compiled lanugages for tasks that are run often and need to be fast
+\end{itemize}
+\end{frame}
+
+\subsection{Data and file-system}
+\begin{frame}{How computers work}{Data and file-system}
+\begin{itemize}
+	\item \textquote{Von Neumann architectures}: data and code live in the same memory
+	\item Permanent memory (e.g. harddrive)
+	\item Fleeting memory (e.g. random access memory)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{How computers work}{Data and file-system: Memory hierarchy}
+
+From the chip sorted by latency:
+
+\vspace{2em}
+
+\begin{tabular}{llll}
+	\toprule
+	Name & Organization & Student equivalent & Permanent \\
+	\midrule
+	Registers & numbered & Clipboard & No\\
+	Caches & lines & Folder & No \\
+	RAM & pages & Depattment library & No \\
+	Permanent memory & filesystem & University library & Yes \\
+	Internet & complex(url, ip ...) & World wide library system & Yes \\
+	\bottomrule
+\end{tabular}
+\end{frame}
+
+\begin{frame}{How computers work}{Data and file-system: Filesystem}
+\begin{itemize}
+	\item Organized in folders
+	\item Folders are containers and can contain each other
+	\item Manages users and permissions
+	\item Manages user groups
+\end{itemize}
+\end{frame}
+
+\section{Question and answers}
+\begin{frame}{Questions and answers}
+\huge
+\centering
+Please ask any remaning questions now.
+\end{frame}
+
 \end{document}
