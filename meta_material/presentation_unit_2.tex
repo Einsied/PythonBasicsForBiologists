@@ -82,7 +82,7 @@
 \section{Table of contents}
 \begin{frame}
 	\frametitle{Table of contents}
-	\setcounter{tocdepth}{1}
+	%\setcounter{tocdepth}{1}
 	\tableofcontents
 \end{frame}
 
@@ -460,6 +460,164 @@ Updating our algorithm:
 	\textquote{table.append(immobility\_column)}
 }
 \end{enumerate}
+\end{frame}
+
+\section{Strings}
+\begin{frame}{Strings}
+\begin{itemize}
+	\item Text is organized in "character Strings"
+	\item Python uses the type \textquote{str}
+	\item \textquote{str} are not mutable
+\end{itemize}
+
+Pleas write a little bit of code to print your name.
+
+\end{frame}
+
+\section{Files}
+\begin{frame}[fragile]{Files}
+
+Please try out the following lines in your material and interpret the results:
+
+\begin{lstlisting}[language=Python, frame=single, basicstyle=\footnotesize]
+csv_file = open("./data_neuron/session_2023111501010_immobility.csv")
+print(csv_file)
+\end{lstlisting}
+
+\pause
+\vspace{0.5em}
+Please try out the following lines in your material and interpret the results:
+
+\begin{lstlisting}[language=Python, frame=single, basicstyle=\footnotesize]
+csv_file = open("./data_neuron/session_2023111501010_immobility.csv")
+content = csv_file.read()
+print(content)
+\end{lsisstlisting}
+
+\pause
+\vspace{0.5em}
+Please try out the following lines in your material to write into a file:
+\begin{lstlisting}[language=Python, frame=single, basicstyle=\footnotesize]
+file_to_write = open("./write.txt", "w")
+text_to_write = "Hello file!"
+file_to_write.write(text_to_write)
+\end{lstlisting}
+
+\end{frame}
+
+\section{Working with strings}
+\begin{frame}[fragile]{Working with strings}
+
+Please execute the following lines in your materials:
+
+\begin{lstlisting}[language=Python, frame=single, basicstyle=\footnotesize]
+csv_file = open("./data_neuron/session_2023111501010_immobility.csv")
+content = csv_file.read()
+lines = content.splie("\n")
+print(lines)
+\end{lstlisting}
+
+\pause
+\vspace{2em}
+Please use what you have learned to split the first two lines into lists of elements.
+
+\end{frame}
+
+\section{Type conversions}
+\begin{frame}[fragile]{Type conversions}
+
+To convert types we use the type-name and the variable we wish to convert.
+
+\begin{lstlisting}[language=Python, frame=single, basicstyle=\footnotesize]
+String = "42"
+Integer = int(String)
+\end{lstlisting}
+
+\vspace{2em}
+
+Please use this knowledge to convert the values given in your materials.
+
+\end{frame}
+
+\section{Pseudo Code}
+\begin{frame}{Pseudo Code}
+
+\begin{itemize}
+	\item Looks like "real" code
+	\item Covers detailed ideas
+	\item Usually used to write down ideas, before bothering with details
+\end{itemize}
+
+\pause
+
+\vspace{2em}
+
+Let us go over the example in the materials.
+
+\end{frame}
+
+\section{Other relevant types}
+\begin{frame}[fragile]{Other relevant types}{Tuple}
+
+Tuple are essentially non mutable lists.
+
+\begin{lstlisting}[language=Python, frame=single]
+tuple_1 = ("A", 42)
+tuple_2 = "Foo", "bar", 48
+print(tuple_1)
+print(tuple_2)
+\end{lstlisting}
+
+\end{frame}
+
+\begin{frame}[fragile]{Other relevant types}{Dict}
+
+Dicts permit us to access values by keys.
+
+\begin{lstlisting}[language=Python, frame=single, basicstyle=\footnotesize]
+name_to_age = {
+    "John Doe":  28,
+    "Maria Musterfrau": 31,
+    "Max Mustermann": 34,
+    "Karl Dosenkohl": 19
+}
+
+name_to_age["Jane Doe"] = 27
+age_john_doe = name_to_age["John Doe"]
+
+# No let us get all the keys from the dict
+keys = id_to_confusion.keys()
+# This can be useful if we want to find a specific value
+values = id_to_confusion.values()
+\end{lstlisting}
+
+\end{frame}
+
+\begin{frame}[fragile]{Other relevant types}{Sets}
+
+Mathematical sets are containers that contain a value only once.
+
+\begin{lstlisting}[language=Python, frame=single]
+tuple_for_set = {1, 2, 3, 3, 4}
+new_set = set(tuple_for_set)
+print(new_set)
+\end{lstlisting}
+
+\end{frame}
+
+\section{Summary}
+\begin{frame}{Summary}
+
+This module we learned about:
+\begin{itemize}
+	\item Operators
+	\item Type
+\end{itemize}
+
+\vspace{2em}
+
+The current state of our algorithm can be found in the materials.
+
 \end{frame}
 
 \section{Question and answers}
