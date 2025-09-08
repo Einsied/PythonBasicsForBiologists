@@ -345,7 +345,7 @@ Please, try to figure out what is saved in \textquote{session\_2023111501010\_un
 	\pause
 	\\ \hline
 	Represents & 128 & 64 & 32 & 16 & 8 & 4 & 2 & 1 \\ 
-	Value      & 0   & 0  &    & 16 & 0 & 0 & 2 & 1 \\
+	Value      & 0   & 0  & 0  & 16 & 0 & 0 & 2 & 1 \\
 \end{tabular}
 \pause
 \vspace{2em}
@@ -393,7 +393,7 @@ The contents at the moment have no meaning for this we need a type.
 \begin{itemize}
 	\item Assume we have a variable \textquote{a}.
 	\item It is a \textquote{unsigned char} or 8-bit integer
-	\item it is saved in memory cell \textquote{1564}
+	\item It is saved in memory cell \textquote{1564}
 \end{itemize}
 
 \pause
@@ -405,7 +405,7 @@ The variable:
 	Name & Type          & Address  & Memory cell content & Value         \\
 	\midrule
 	a    & unsigned int  & 1564     &  00010011           & 19            \\
-	b    &          char & 1565     &  01000001           & \textquote{A} \\
+	b    & char          & 1565     &  01000001           & \textquote{A} \\
 	c    & unsigned int  & 1565     &  01000001           & 65            \\
 	\bottomrule
 \end{tabular}
@@ -525,7 +525,7 @@ Things to remember about the interpreter:
 \begin{itemize}
 	\item Spelling matters \textquote{SpikeCounter} is not \textquote{spikecounter} is not \textquote{spike\_counter}
 	\item It is a logic machine, it just applies predefined rules
-	\item It produces binary isntructions
+	\item It produces binary instructions
 	\item Some languages like \textquote{C} or \textquote{C++} save the binary instructions as prgrams (e.g. \textquote{.exe}),
 		then the interpreter is known as a compiler
 	\item Interpreted languages are usually less optimized and slower than compiled lanugages
