@@ -352,7 +352,7 @@ a.append(42.0)
 print(a)
 \end{lstlisting}
 
-Result: \pause \textquote{[0.0, 4.5, 8.3]}
+Result: \pause \textquote{[0.0, 4.5, 42.0]}
 
 \pause
 \textquote{a} was changed by append and pop.
@@ -386,8 +386,8 @@ Please predict what this code will print before executing it.
 
 \begin{lstlisting}[language=Python, frame=single]
 spike_number_unit_1 = [12, 23, 35]
-spike_number_unit_1_reference = spike_number_unit_1.copy()
-spike_number_unit_1_reference[1] = 42
+spike_number_unit_1_copy = spike_number_unit_1.copy()
+spike_number_unit_1_copy[1] = 42
 print(spike_number_unit_1)
 \end{lstlisting}
 
@@ -493,7 +493,7 @@ Please try out the following lines in your material and interpret the results:
 csv_file = open("./data_neuron/session_2023111501010_immobility.csv")
 content = csv_file.read()
 print(content)
-\end{lsisstlisting}
+\end{lstlisting}
 
 \pause
 \vspace{0.5em}
@@ -514,7 +514,7 @@ Please execute the following lines in your materials:
 \begin{lstlisting}[language=Python, frame=single, basicstyle=\footnotesize]
 csv_file = open("./data_neuron/session_2023111501010_immobility.csv")
 content = csv_file.read()
-lines = content.splie("\n")
+lines = content.split("\n")
 print(lines)
 \end{lstlisting}
 
@@ -599,7 +599,7 @@ values = id_to_confusion.values()
 Mathematical sets are containers that contain a value only once.
 
 \begin{lstlisting}[language=Python, frame=single]
-tuple_for_set = {1, 2, 3, 3, 4}
+tuple_for_set = (1, 2, 3, 3, 4)
 new_set = set(tuple_for_set)
 print(new_set)
 \end{lstlisting}
