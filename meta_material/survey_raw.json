@@ -1,0 +1,71 @@
+{
+"Respondent":{
+	"Basic programming knowledge":     [0, 0, 0, 0, 0],
+	"Basic coding skills":             [0, 0, 0, 0, 0],
+	"Basic knowledge in biology":      [0, 0, 0, 0, 0],
+	"Basic knowledge in neuro":        [0, 0, 0, 0, 0],
+	"Enrolled in biology":             [0, 0, 0, 0, 0],
+	"Informed myself about the course":[0, 0, 0, 0, 0],
+	"Attended to learn":[
+		"Programming", 
+		"Write and understand code",
+		"Python syntax and complex scripts"
+	]
+	},
+"Tutor A":{
+	"Name": "John Doe",
+	"Seems well prepared":             [0, 0, 0, 0, 0],
+	"Treats participants with respect":[0, 0, 0, 0, 0],
+	"Understand explanations":         [0, 0, 0, 0, 0],
+	"Confident to ask":                [0, 0, 0, 0, 0],
+	"Tought on my level of knowledge": [0, 0, 0, 0, 0],
+	"Is good teacher":                 [0, 0, 0, 0, 0],
+	"Sytle to frontal":                [0, 0, 0, 0, 0],
+	"Sytle to interactive":            [0, 0, 0, 0, 0]
+	},
+"Tutor B":{
+	"Name": "Jane Doe",
+	"Seems well prepared":             [0, 0, 0, 0, 0],
+	"Treats participants with respect":[0, 0, 0, 0, 0],
+	"Understand explanations":         [0, 0, 0, 0, 0],
+	"Confident to ask":                [0, 0, 0, 0, 0],
+	"Tought on my level of knowledge": [0, 0, 0, 0, 0],
+	"Is good teacher":                 [0, 0, 0, 0, 0],
+	"Sytle to frontal":                [0, 0, 0, 0, 0],
+	"Sytle to interactive":            [0, 0, 0, 0, 0]
+	},
+"Example":{
+	"Motivating":                   [0, 0, 0, 0, 0],
+	"Understood":                   [0, 0, 0, 0, 0],
+	"Easy to understand":           [0, 0, 0, 0, 0],
+	"Introduced contents naturally":[0, 0, 0, 0, 0],
+	"The example should be kept":   [0, 0, 0, 0, 0]
+	},
+"Presentation":{
+	"Materials are helpful":                [0, 0, 0, 0, 0],
+	"Materials are too verbose":            [0, 0, 0, 0, 0],
+	"Materials are too short":              [0, 0, 0, 0, 0],
+	"Materials replace notes":              [0, 0, 0, 0, 0],
+	"Materials are too formal":             [0, 0, 0, 0, 0],
+	"Materials are too colloquial":         [0, 0, 0, 0, 0],
+	"Materials work without major problems":[0, 0, 0, 0, 0]
+	},
+"Content":{
+	"Well structured": [0, 0, 0, 0, 0],
+	"Follow with ease":[0, 0, 0, 0, 0],
+	"Too theoretical": [0, 0, 0, 0, 0],
+	"Too practical":   [0, 0, 0, 0, 0],
+	"Relevance":       [0, 0, 0, 0, 0]
+	},
+"Atmosphere":{
+	"Stress":                              [0, 0, 0, 0, 0],
+	"Excluded":                            [0, 0, 0, 0, 0],
+	"Unsafe":                              [0, 0, 0, 0, 0],
+	"Like to work with other participants":[0, 0, 0, 0, 0]
+	},
+"Summary":{
+	"Is useful":              [0, 0, 0, 0, 0],
+	"Wish to attend earlier": [0, 0, 0, 0, 0],
+	"Would recommend":        [0, 0, 0, 0, 0]
+	}
+}
