@@ -18,21 +18,10 @@
 	"Treats participants with respect":[0, 0, 0, 0, 0],
 	"Understand explanations":         [0, 0, 0, 0, 0],
 	"Confident to ask":                [0, 0, 0, 0, 0],
-	"Tought on my level of knowledge": [0, 0, 0, 0, 0],
+	"Taught on my level of knowledge": [0, 0, 0, 0, 0],
 	"Is good teacher":                 [0, 0, 0, 0, 0],
-	"Sytle to frontal":                [0, 0, 0, 0, 0],
-	"Sytle to interactive":            [0, 0, 0, 0, 0]
-	},
-"Tutor B":{
-	"Name": "Jane Doe",
-	"Seems well prepared":             [0, 0, 0, 0, 0],
-	"Treats participants with respect":[0, 0, 0, 0, 0],
-	"Understand explanations":         [0, 0, 0, 0, 0],
-	"Confident to ask":                [0, 0, 0, 0, 0],
-	"Tought on my level of knowledge": [0, 0, 0, 0, 0],
-	"Is good teacher":                 [0, 0, 0, 0, 0],
-	"Sytle to frontal":                [0, 0, 0, 0, 0],
-	"Sytle to interactive":            [0, 0, 0, 0, 0]
+	"Style too frontal":                [0, 0, 0, 0, 0],
+	"Style too interactive":            [0, 0, 0, 0, 0]
 	},
 "Example":{
 	"Motivating":                   [0, 0, 0, 0, 0],
