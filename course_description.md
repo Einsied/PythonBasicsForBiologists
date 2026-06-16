@@ -31,7 +31,7 @@ if grades are required for the participants programs.
 | Number of participants               | 10-20                                                | 
 | Course-materials                     | https://github.com/Einsied/PythonBasicsForBiologists |
 | Date                                 | 28th September until 2th of October                  |
-| Place                                | to be announced                                      |
+| Place                                | Central institute for mental health, J5 Mannheim  <br> Mo: Hans-Martini-Saal, Suchtklinik 4. OG <br> Di: Raum 106, Therapiegebäude 1. OG <br> Mi: Hans-Martini-Saal, Suchtklinik 4. OG <br> Do: Raum 106, Therapiegebäude, ZIPP Lounge <br> Fr: Hans-Martini-Saal, Suchtklinik 4. OG <br> [Location](https://www.zi-mannheim.de/en/service/addressroute.html)|
 | Time-slot                            | 10:00 c.t. - 16:00 c.t. Uhr                          |
 | Prerequisite                         | None extraordinary                                   |
-| Necessary materials for participants | A device capable to connection to the internat from the course-location and able to run a java-script-capable browser (like firefox, Chrome or Edge) with an character input method. The usage of a laptop and pen and paper are advised. |
+| Necessary materials for participants | A device capable to connect to eduroam and able to run a java-script-capable browser (like firefox, Chrome or Edge) with an character input method. The usage of a laptop and pen and paper are advised. |

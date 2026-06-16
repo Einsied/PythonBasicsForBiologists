@@ -30,7 +30,7 @@ bilden das benotete Prüfungsergebnis, falls ein solches benötigt wird.
 | Teilnehmenden Anzahl     | 10-20 Personen                                        |
 | Kurs unterlagen          | https://github.com/Einsied/PythonBasicsForBiologists  |
 | Termin                   | 28ter September - 2ter Oktober                        |
-| Ort                      |                                                       |
+| Ort                      | Zentrales Insitut für seelische Gesundheit, J5 Mannheim  <br> Mo: Hans-Martini-Saal, Suchtklinik 4. OG <br> Di: Raum 106, Therapiegebäude 1. OG <br> Mi: Hans-Martini-Saal, Suchtklinik 4. OG <br> Do: Raum 106, Therapiegebäude, ZIPP Lounge <br> Fr: Hans-Martini-Saal, Suchtklinik 4. OG <br> [Anfahrt](https://www.zi-mannheim.de/service/anfahrt.html)|
 | Veranstaltungsdauer      | 10:00 c.t. - 16:00 c.t. Uhr                           |
 | Benötigte Vorkentnisse   | Keine besonderen                                      |
-| Materialien Teilnehmende | Ein im Veranstaltungsraum internetfähiges Endgerät mit installiertem  java-scriptfähigen Browser (z.B. Firefox, Chrome oder Edge) und einer Möglichkeit zur Zeicheneingabe wird vorausgesetzt. Die Verwendung eines Laptops mit Tastatur, sowie Stift und Papier wird empfohlen. |
+| Materialien Teilnehmende | Ein im Endgerät welches sich mit eduroam verbinden kann mit installiertem  java-scriptfähigen Browser (z.B. Firefox, Chrome oder Edge) und einer Möglichkeit zur Zeicheneingabe wird vorausgesetzt. Die Verwendung eines Laptops mit Tastatur, sowie Stift und Papier wird empfohlen. |
